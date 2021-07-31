@@ -3,7 +3,7 @@
     <p>{{greetText}}</p>
     <p>挨拶した回数: {{count}}回</p>
     <p v-if="isRegulars">いつもありがとうございます</p>
-    <my-button @click="onMyButtonClicked" :greet="greetText" /><br>
+    <my-button class="my-button" @click="onMyButtonClicked" :greet="greetText">挨拶する</my-button><br>
     <reset-button v-model="greetText" />
   </div>
 </template>
