@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts">
-import {Component, Prop, Vue} from "vue-property-decorator";
+import {Component, Emit, Prop, Vue} from "vue-property-decorator";
 import { component } from "vue/types/umd";
 
 @Component
@@ -14,6 +14,10 @@ export default class MyButton extends Vue{
 
   public onClick() {
     alert(this.greet);
+    this.click();
   }
+
+  @Emit()
+  public click(){}
 }
 </script>
