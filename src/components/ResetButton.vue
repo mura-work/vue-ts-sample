@@ -23,5 +23,9 @@ export default class ResetButton extends Vue {
   public onClick(){
     this.input(this.initialValue);
   }
+
+  public created(){
+    this.initialValue = this.value;
+}
 }
 </script>
